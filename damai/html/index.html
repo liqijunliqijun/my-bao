@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../ccss/gonggong.css"/>
+	<link rel="stylesheet" type="text/css" href="../ccss/index.css"/>
+
+
+	<script src="../js/tool.js" type="text/javascript" charset="utf-8"></script>						
+	<script src="../js/jquery-1.8.3.js"></script>
+	<script src="../js/cookieTools.js"></script>
+	<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/slider.js" type="text/javascript" charset="utf-8"></script>
+	
+
+</head>
+<body>
+		<div id="opsecity"></div>
+		<div class="deng">
+			<div id="xxx">
+			X
+			</div>
+				<div class="denglu">
+					<div class="zhuce">
+						<h1>注册</h1>
+						<span>快速登录</span>
+					</div>
+					<div class="inputText">
+						<form action="" method="post">
+							<div class="InpTx">
+								<input type="text" id="" placeholder="手机号" />
+								<span>请输入手机号</span>
+							</div>
+							<div class="InpTx yanzhenceshi">
+								<input type="text" id="" placeholder="短信验证码" />
+								<span>验证码</span>
+								<span>须为6位数字</span>
+								<span>输入验证码</span>
+							</div>
+							<div class="InpTx">
+								<input type="text" id="" placeholder="请输入用户名" />
+								<span>请输入用户名</span>
+							</div>
+							<div class="InpTx">
+								<input type="text" id="" placeholder="下次自动登陆" />
+								<span>请设置密码</span>
+							</div>
+							<div class="InpTx InpTxXieYI">
+								<input type="checkbox" id="" name="s" />
+								<p>我已阅读并接受孔网 
+									<a href="">《服务协议》</a>和
+									<a href="">《账户协议》</a> 
+								</p>
+							</div>
+							<input id="sub" type="submit" placeholder=""/>
+						</form>
+					</div>
+				</div>
+				<div class="denglu">
+					<div class="zhuce">
+						<h1>登录</h1>
+						<span>手机验证码登录</span>
+					</div>
+					<div class="inputText">
+						<form action="" method="post">
+							<div class="InpTx">
+								<input type="text" id="" placeholder="请输入用户名" />
+								<span>请输入用户名</span>
+							</div>
+							<div class="InpTx InpTxmima">
+								<input type="text" id="" placeholder="请输入密码" />
+								<span>请输入密码</span>
+							</div>
+							<div class="InpTx InpTxRadio">
+								<input type="checkbox" id="" name="a" />
+								<p>下次自动登录</p>
+								<p>忘记密码</p>
+							</div>
+							<input id="sub" type="submit" value="登陆"/>
+							<div class="InpTx InpTxBotton" >
+								<a href="">
+									<img src="img/wei.png"/>
+									<div>微信</div>
+								</a>
+								<a href="">
+									<img src="img/QQ.png"/>
+									<div>QQ</div>
+								</a>
+								<a href="">
+									<img src="img/weibo.png"/>
+									<div>微博</div>
+								</a>
+								<a href="">  |  </a>
+								<div  id="lijizhuce" >立即注册</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="denglu">
+					<div class="zhuce">
+						<h1>登录</h1>
+						<span>其他登录方式</span>
+					</div>
+					<div class="inputText">
+						<form action="" method="post">
+							<div class="InpTx">
+								<input type="text" id="" placeholder="手机号" />
+								<span>请输入手机号</span>
+							</div>
+							<div class="InpTx">
+								<input type="text" id="" placeholder="短信验证码" />
+								<span>验证码</span>
+								<span>须为6位数字</span>
+							</div>
+							<div class="InpTx InpTxHidden">
+								<input type="text" id="" placeholder="设置新密码" />
+								<span>设置新密码</span>
+							</div>
+							<div class="InpTx InpTxHidText">
+								<p>设置新密码，方便下次登录</p>
+							</div>
+							<input id="sub" type="submit" value="登   陆"/>
+						</form>
+					</div>
+				</div>
+			</div>
+
+<!--头部-->
+	<div class="heard">
+		<div class="heardOne">
+			<a href="#">
+				<img src="../img/m (1).png"/>
+			</a>
+			<div class="heardOne-1">
+				<span><img src="../img/dibiao.png"/></span>
+				<span >
+					<a id="dizhi" href="">地址</a>
+					<div class="city-header-wrap" id="cityheaderwrap">
+						<div class="city-header" id="city">
+							<div class="now-city">
+								<span class="title-city">当前城市:</span>
+								<span class="name-city select-city">全国</span>
+							</div>
+							<div class="hot-city">
+								<span class="title-city">热门城市:</span>
+								<div class="list-other">
+									<span class="name-city" >全国</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=北京">北京</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=上海">上海</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=深圳">深圳</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=广州">广州</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=杭州">杭州</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=天津">天津</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=重庆">重庆</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=成都">成都</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=香港">香港</span>
+								</div>
+							</div>
+							<div class="other-city" data-spm-anchor-id="a2oeg.home.city.i0.591b48d3XDP4oD">
+								<span class="title-city">其他城市:</span>
+								<div class="list-other">
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=上海">上海</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=ata-spm=">嘉兴</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=厦门">厦门</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=贵阳">贵阳</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=长春">长春</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=南昌">南昌</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=香港">香港</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=石家庄">石家庄</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=佛山">佛山</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=福州">福州</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=哈尔滨">哈尔滨</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=合肥">合肥</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=郑州">郑州</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=常州">常州</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=青岛">青岛</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=绍兴">绍兴</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=沈阳">沈阳</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=太原">太原</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=珠海">珠海</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=南宁">南宁</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=澳门">澳门</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=东莞">东莞</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=台州">台州</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=中山">中山</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=包头">包头</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=呼和浩特">呼和浩特</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=南通">南通</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=烟台">烟台</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=河源">河源</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=泉州">泉州</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=温州">温州</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=银川">银川</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=江门">江门</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=海口">海口</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=兰州">兰州</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=潍坊">潍坊</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=扬州">扬州</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=宜昌">宜昌</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=金华">金华</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=汕头">汕头</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=唐山">唐山</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=晋中">晋中</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=廊坊">廊坊</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=马鞍山">马鞍山</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=萍乡">萍乡</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=乌鲁木齐">乌鲁木齐</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=德州">德州</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=桂林">桂林</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=柳州">柳州</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=泰安">泰安</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=泰州">泰州</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=肇庆">肇庆</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=淄博">淄博</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=蚌埠">蚌埠</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=北海">北海</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=东营">东营</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=湖州">湖州</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=惠州">惠州</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=吉林">吉林</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=乐山">乐山</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=丽水">丽水</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=绵阳">绵阳</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=新乡">新乡</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=安阳">安阳</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=本溪">本溪</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=滨州">滨州</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=昌吉">昌吉</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=崇左">崇左</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=大庆">大庆</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=抚顺">抚顺</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=赣州">赣州</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=贵港">贵港</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=邯郸">邯郸</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=衡水">衡水</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=黄冈">黄冈</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=荆州">荆州</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=九江">九江</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=丽江">丽江</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=凉山">凉山</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=临沂">临沂</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=洛阳">洛阳</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=盘锦">盘锦</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=黔东南">黔东南</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=黔西南">黔西南</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=日照">日照</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=三亚">三亚</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=上饶">上饶</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=台北">台北</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=铜陵">铜陵</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=文山">文山</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=芜湖">芜湖</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=咸宁">咸宁</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=新余">新余</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=盐城">盐城</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=阳江">阳江</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=宜宾">宜宾</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=营口">营口</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=岳阳">岳阳</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=湛江">湛江</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=遵义">遵义</span>
+									<span class="name-city" data-spm="dselectcity&amp;clicktitle=境外">境外</span>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</span>
+				<span><img src="../img/sanjiao.png"/></span>
+			</div>
+			<div class="heardOne-2">
+				<a class="" href="#brat">首页</a>
+				<a class="" href="#brat">分类</a>
+			</div>
+			<div class="heardOne-3">
+				 <span><img src="../img/fangdajing.png"/></span>
+				 <input class="input-search" placeholder="搜索明星、演出、体育赛事">
+				 <div class="heardOne-sou">搜索</div>
+			</div>
+			<div class="heardOne-4">
+				<div class="jiao" id="denglu">
+					<a href=""><img src="../img/denglu.png"/></a>
+
+
+					<a href=""><span id="idSpan">登录</span></a>	
+					
+					<div class="zhanghao">
+						<a class="zhan zhaozhuce" href="#">个人信息</a>
+						<a  class="zhan zhaodeng" href="#">账号设置</a>
+						<a  class="zhan" href="#">订单管理</a>
+						<a id="quxiao" class="zhan" href="#">取消登录</a>
+					</div>
+				</div>
+				<div class="jiao" id="jiaobrat" >
+					<a href="#">
+						<img src="../img/shouji.png"/>
+					</a>
+					<a href=""><span>下载</span></a>
+					<img class="xiazai" src="../img/m (3).png"/>
+				</div>
+				
+				<div class="jiao">
+					 <a href="">
+					 	<img src="../img/yingweyemian.png"/>	
+					 </a>
+					<a href=""><span>English</span>	</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!--轮播图-->
+	<div class="Carouselmap" id = 'Carouselmap'>
+		<div class="lun" >
+			<div id="box">
+				<!-- <img src="../img/m (25).JPG" class="active"/>
+				<img src="../img/m (39).jpg" class="active"/>
+				<img src="../img/m (30).jpg" class="active"/>
+				<img src="../img/m (29).jpg" class="active"/>
+				<img src="../img/m (46).jpg" class="active"/>
+				<ul>
+					<li class="q"></li>
+					<li class="q"></li>
+					<li class="q"></li>
+					<li class="q"></li>
+					<li class="q"></li>
+				
+				</ul> -->
+			</div>
+			<div class="p-left">
+				<p></p>
+			</div>
+			<div class="p-right">
+				<p></p>
+			</div>
+		</div>
+	</div>
+<!--分类-->
+	<div class="classtopic">
+		
+			<a href="#" class="">
+				<span><img src="../img/news.gif"/></span>
+				<p>演唱会</p>
+			</a>
+			<a href="#" class="">
+				<span><img src="../img/news.gif"/></span>
+				<p>话剧歌剧</p>
+			</a>
+			<a href="" class="">
+				<span><img src="../img/news.gif"/></span>
+				<p>体育赛事</p>
+			</a>
+			<a href="" class="">
+				<span><img src="../img/news.gif"/></span>
+				<p>儿子亲子</p>
+			</a>
+			<a href="" class="">
+				<span><img src="../img/news.gif"/></span>
+				<p>度假休闲</p>
+			</a>
+			<a href="" class="">
+				<span><img src="../img/news.gif"/></span>
+				<p>音乐会</p>
+			</a>
+			<a href="" class="">
+				<span><img src="../img/news.gif"/></span>
+				<p>曲乐杂谈</p>
+			</a>
+			<a href="" class="">
+				<span><img src="../img/news.gif"/></span>
+				<p>舞蹈芭蕾</p>
+			</a>
+			<a href="" class="">
+				<span><img src="../img/news.gif"/></span>
+				<p>动漫</p>
+			</a>
+			<a href="" class="">
+				<span><img src="../img/news.gif"/></span>
+				<p>旅游展览</p>
+			</a>
+		
+	</div>
+<!--正文-->
+	<div class="textt">
+		<!--演唱会-->
+		<div class="tex sing">
+			<div class="her singHeard">
+				<span class="theHeL">演唱会</span>
+				<span class="theHeR">
+					<a href="#">
+					查看全部
+					</a>
+				</span>
+			</div>
+			<div class="com">
+				<a class="comH" href="#">
+					<div class="comHimg">
+						<img class="comImg" src="../img/m (15).jpg"/>
+					</div>
+					<ul>
+						<li>2018【咪咕音乐现场】上海站王一浩&池约翰专场</li>
+						<li>
+							¥220
+							<span>起</span>
+						</li>
+					</ul>
+				</a>
+				<div class="comText">
+					<a href="#" class="com1">
+						<div class="shadow"><img src="../img/162119_n.jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com2">
+						<div class="shadow"><img src="../img/165672_n.jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com3">
+						<div class="shadow"><img src="../img/166125_n.jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com4">
+						<div class="shadow"><img src="../img/166404_n.jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com5">
+						<div class="shadow"><img src="../img/m (14).jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com6">
+						<div class="shadow"><img src="../img/m (9).jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--话剧-->
+		<div class="tex theater">
+			<div class="her singHeard">
+				<span class="theHeL">话剧歌剧</span>
+				<span class="theHeR">
+					<a href="#">
+					查看全部
+					</a>
+				</span>
+			</div>
+			<div class="com">
+				<a class="comH" href="#">
+					<div class="comHimg">
+						<img class="comImg" src="../img/m (17).jpg"/>
+					</div>
+					<ul>
+						<li>2018【咪咕音乐现场】上海站王一浩&池约翰专场</li>
+						<li>
+							¥220
+							<span>起</span>
+						</li>
+					</ul>
+				</a>
+				<div class="comText">
+					<a href="#" class="com1">
+						<div class="shadow"><img src="../img/166040_n.jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com2">
+						<div class="shadow"><img src="../img/166124_n.jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com3">
+						<div class="shadow"><img src="../img/166328_n.jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com4">
+						<div class="shadow"><img src="../img/m (13).jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com5">
+						<div class="shadow"><img src="../img/m (1).jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com6">
+						<div class="shadow"><img src="../img/m (7).jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--体育-->
+		<div class="tex sports">
+			<div class="her singHeard">
+				<span class="theHeL">体育比赛</span>
+				<span class="theHeR">
+					<a href="#">
+					查看全部
+					</a>
+				</span>
+			</div>
+			<div class="com">
+				<a class="comH" href="#">
+					<div class="comHimg">
+						<img class="comImg" src="../img/m (3).jpg"/>
+					</div>
+					<ul>
+						<li>2018【咪咕音乐现场】上海站王一浩&池约翰专场</li>
+						<li>
+							¥220
+							<span>起</span>
+						</li>
+					</ul>
+				</a>
+				<div class="comText">
+					<a href="#" class="com1">
+						<div class="shadow"><img src="../img/m (3).jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com2">
+						<div class="shadow"><img src="../img/m (6).jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com3">
+						<div class="shadow"><img src="../img/165383_n.jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+
+					<a href="" class="com4">
+						<div class="shadow"><img src="../img/163744_n.jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com5">
+						<div class="shadow"><img src="../img/165799_n.jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com6">
+						<div class="shadow"><img src="../img/166028_n.jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>	
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--儿童-->
+		<div class="tex brat">
+			<div class="her singHeard">
+				<span class="theHeL">儿童亲子</span>
+				<span class="theHeR">
+					<a href="#">
+					查看全部
+					</a>
+				</span>
+			</div>
+			<div class="com">
+				<a class="comH" href="#">
+					<div class="comHimg">
+						<img class="comImg" src="../img/166178_n.jpg"/>
+					</div>
+					<ul>
+						<li>2018【咪咕音乐现场】上海站王一浩&池约翰专场</li>
+						<li>
+							¥220
+							<span>起</span>
+						</li>
+					</ul>
+				</a>
+				<div class="comText">
+					<a href="#" class="com1">
+						<div class="shadow"><img src="../img/165622_n.jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com2">
+						<div class="shadow"><img src="../img/165987_n.jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com3">
+						<div class="shadow"><img src="../img/166006_n.jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com4">
+						<div class="shadow"><img src="../img/166305_n.jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com5">
+						<div class="shadow"><img src="../img/166083_n.jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+					<a href="" class="com6">
+						<div class="shadow"><img src="../img/166400_n.jpg"/></div>
+						<ul>
+							<li>记忆之声 白举纲“耳盲”全国巡演</li>
+							<li>MAO Livehouse Shang hai</li>
+							<li>2018.10.26 20:00</li>
+							<li>
+								¥220
+								<span>起</span>
+							</li>
+						</ul>
+					</a>
+				</div>
+			</div>
+		</div>	
+	
+<!--尾部-->
+	<div class="foot">
+		<div class="foots">
+			<div class="footsH">
+				<ul>
+					<li><a href="#">帮助中心</a></li>
+					<li>|</li>
+					<li><a href="#">公司介绍</a></li>
+					<li>|</li>
+					<li><a href="#">品牌识别</a></li>
+					<li>|</li>
+					<li><a href="#">公司大事记</a></li>
+					<li>|</li>
+					<li><a href="#">隐私权专项政策</a></li>
+					<li>|</li>
+					<li><a href="#">廉政举报</a></li>
+					<li>|</li>
+					<li><a href="#">联系合作</a></li>
+					<li>|</li>
+					<li><a href="#">招聘信息</a></li>
+					<li>|</li>
+					<li><a href="#">防骗秘籍</a></li>
+				</ul>
+			</div>
+			
+			<div class="footend">
+				<div class="foot1">
+					<a href="#">
+						<img src="../img/m (1).png"/>
+					</a>
+					<div class="foot1-1">
+						<img src="../img/m (3).png"/>
+						<p>APP下载</p>
+					</div>
+				</div>
+				<div class="foot2">
+					<div class="foot2-1">
+						<a href="#">在线客服</a>
+					</div>
+					<ul>
+						<li><a href="#">京ICP证031057号</a></li>
+						<li>|</li>
+						<li><a href="#">京ICP备11043884号</a></li>
+						<li>|</li>
+						<li>
+							<a href="#">京公网安备11010102000430号</a></li>
+						<li>|</li>
+						<li><a href="#">
+							广播电视节目制作经营许可证 (京)字第02253号
+						</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">网络文化经营许可证 京网文[2016]3438-413号</a></li>
+						<li>|</li>
+						<li><a href="#">营业性演出许可证 京市演587号</a></li>
+						
+					</ul>
+					<ul>
+						<li>北京红马传媒文化发展有限公司 版权所有</li>
+						<li>|</li>
+						<li><a href="#">大麦网</a></li>
+						<li>|</li>
+						<li>Copyright 2003-2018 All Rights Reserved</li>
+					</ul>
+					<div class="footEndImg">
+						<a href="#"><img src="../img/last-img-3.gif"/></a>
+						<a href="#"><img src="../img/last-ing-2.png"/></a>
+						<a href="#"><img src="../img/last-img-1.png"/></a>
+						<a href="#"><img src="../img/last-img-4.png"/></a>
+						<a href="#"><img src="../img/last-img-5.png"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--//固定的侧边栏，-->
+	<div class="rightBotton">
+		<div class="right">
+			<a href="#">
+				<p></p>
+				<p>在线客服</p>
+			</a>
+			<a href="#">
+				<p></p>
+				<p>APP下载</p>
+				<p><img src="../img/m (3).png"/></p>
+			</a>
+			
+		</div>
+		<div class="retop">
+			
+			<p></p>
+			<p>回到顶部</p>
+			
+		</div>
+	</div>
+		
+	
+	
+	
+	
+	
+	
+	<div class="end">
+		无用的页面;
+	</div>
+</body>
+</html>
+					
+				

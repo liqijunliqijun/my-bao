@@ -1,0 +1,444 @@
+body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td,span,img{
+	margin:0;
+	padding:0;
+	}
+a{
+	text-decoration: none;
+	color: #111;
+	}
+ul,li,input,select,option{
+	list-style: none;
+	
+	box-sizing: border-box;
+}
+input{
+	border-color:white ;
+	/*border-style: none;*/
+}
+	.heard{
+		width: 1200px;
+		height: 100px;
+		/*background: sandybrown;*/
+		margin: 0 auto;
+		/*border:1px solid #808080;*/
+	}
+	.herLeft img{
+		float: left;
+	    margin-top: 24px;
+	    width: 108px;
+	    height: 48px;
+	}
+	
+	.herRight{
+		float: right;
+	    margin-top: 24px;
+	    width: 121px;
+	    height: 38px;
+	    line-height: 38px;
+	    overflow: hidden;
+	    text-align: center;
+	    border: 1px solid #ccc;
+	    font-size: 14px;
+	    color: #888;
+	}
+	.cont{
+		width: 100%;
+		height: 590px;
+		background: linear-gradient(to right,#ff0078,#b100eb, #220788);
+		margin: 0 auto;
+	}
+	.content{
+		width: 1200px;
+		height: 590px;
+		/*border: 1px solid #808080;*/
+		margin: 0 auto;
+		position: relative;
+	}
+	.contentImg img{
+		margin-top: 90px;
+		display: block;
+		 width: 720px;
+	    height: 400px;
+	    position: absolute;
+	    left: 10px;
+	    top: 10px;
+	}
+	.text{
+		margin-top: 90px;
+		display: block;
+		width: 350px;
+		/*height: 320px;*/
+		background: #F8F8F8;
+		position: absolute;
+		right: 30px;
+		top: 10px;
+	
+	}
+	.ull li{
+		display: block;
+		float: left;
+		width: 116px;
+		height: 40px;
+		background: #C0C0C0;
+		border-color: #ff1268;
+	    color: #333333;
+	    background-color: #fff;
+	    text-align: center;
+	    line-height: 40px;
+	      cursor: pointer;
+	}
+	.ull li:first-child{
+		background: firebrick;
+		color: white;
+	}
+	input{
+		border: 1px solid #ccc;
+		width: 300px;
+	    height: 42px;
+	    outline: none;
+	    font-size: 14px;
+	    padding-left: 50px;
+	}
+	.tou{
+		padding: 25px;
+		display: none;
+	}
+/*密码登录*/
+
+	.tou img{
+		padding: 10px 0 5px 13px;
+		float: left;
+		width: 22px;
+		height: 22px;
+	}
+	.biao2 img{
+		position: absolute;
+		left: 0px;
+		top: 0;
+	}
+	.biao{
+		margin:10px 0 10px 0;
+		position: relative;
+	}	
+	.biao:nth-child(1){
+		display: inline-block;
+		width: 300px;
+		height: 30px;
+		background: mistyrose;
+		text-align: center;
+		line-height: 30px;
+		font-size: 14px;
+		margin-top: 20px;
+		border: 1px solid red;
+		margin-bottom: 0;
+		}
+	.biao:nth-child(2){
+		margin-top: 20px;
+		display: inline-block;
+	}
+	.biao:nth-child(3){
+		display: inline-block;
+		}
+	.biao:nth-child(4) input{
+			color: white;
+			background: #FF1268;
+			padding-left: 0;
+			font-size: 18px;
+			}
+	.biao:nth-child(5){
+		margin: 0;
+		display: inline-block;
+		}
+			
+	.biao:nth-child(5) img{
+		display: inline-block;
+		width: 22px;
+		height: 22px;
+		}
+			
+	.biao:nth-child(6){
+		padding-left: 183px;
+		margin-bottom: 0;
+		right: 0;
+		font-size:14px ;
+		
+	}
+/*二*/
+/*--------二-短信登录，-------------*/
+	.tou2{
+		margin: 0 auto;
+		width: 300px;
+		padding: 25px;
+		/*border:1px solid #808080 ;*/
+		z-index: 100;
+	}
+	.tou2 img{
+		padding: 10px 0 5px 13px;
+		float: left;
+		width: 22px;
+		height: 22px;
+	}
+	input{
+		border: 1px solid #ccc;
+		width: 300px;
+	    height: 42px;
+	    outline: none;
+	    font-size: 14px;
+	    padding-left: 50px;
+	}
+	.biao2 img{
+		position: absolute;
+		left: 0px;
+		top: 0;
+	}
+	.biao{
+		margin:10px 0 10px 0;
+		position: relative;
+		
+	}
+	.biao:nth-child(1){
+		display: inline-block;
+		width: 300px;
+		height: 30px;
+		background: mistyrose;
+		text-align: center;
+		line-height: 30px;
+		font-size: 14px;
+		margin-top: 20px;
+		border: 1px solid red;
+		margin-bottom: 0;
+		}
+	.biao:nth-child(2){
+		margin-top: 20px;
+		
+		display: inline-block;
+	}
+	.biao:nth-child(3){
+		display: inline-block;
+		background: #999999;
+		}
+		
+	.biao:nth-child(3) a{
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		color: #708090;
+	}
+	.biao:nth-child(4) input{
+		color: white;
+		background: #FF1268;
+		padding-left: 0;
+		font-size: 18px;
+
+			
+			}
+	.tou2 .biao:nth-child(4) input{
+		margin-bottom: 70px;
+		
+		}
+	.biao:nth-child(5){
+		margin: 0;
+		display: inline-block;
+		}
+			
+	.biao:nth-child(5) img{
+		display: inline-block;
+		width: 22px;
+		height: 22px;
+		/*margin:0 4px 0 4px ;*/
+		}
+	.biao:nth-child(6){
+		padding-left: 183px;
+		margin-bottom: 0;
+		right: 0;
+		font-size:14px ;
+		
+	}
+	.pho{
+		/*display: block;*/
+		position: absolute;
+		left: 1px;
+		top: 42px;
+		background: white;
+		z-index: 10;
+		display: none;
+	}	
+	 .tou2 .pho li{
+		padding: 0 7px 0 7px;
+		line-height: 25px;
+		width: 200px;
+		height: 25px;
+		font-size: 14px;
+		color: slategrey;
+		cursor: pointer;
+	}
+	 .tou2 .pho li span:last-child{
+		float: right;
+		font-size: 13px;
+	}
+	 .pho li:first-child{
+		display: block;
+		background: brown;
+		color: white;
+	}
+	.ph88{
+		cursor: pointer;
+		display: inline-block;
+		position: absolute;
+		width: 55px;
+		height: 40px;
+		font-size: 14px;
+		color: #707070;
+		left: 40px;
+		top: 1px;
+		line-height: 40px;
+		border-right:1px solid #ccc;
+		padding: 0 8px ;
+		/*display: none;*/
+	}
+	.ph88 span img{
+		position: absolute;
+	    left: 37px;
+	    top: 3px;
+	    width: 12px;
+	    height: 15px;
+	}
+	.photo{
+		padding-left: 116px;
+	}
+	#w .cccc a{
+		width: 15px;
+		height: 15px;
+		display: block;
+		position: absolute;
+    	left: 50px;
+   		top: 11px;		
+		
+	    background: url(../imgdenglu/xiajianhao2.png);
+		background-size:15px 15px ;
+	}
+	#w .cccc .c{
+		width: 15px;
+		height: 15px;
+		display: block;
+		position: absolute;
+    	left: 50px;
+   		top: 11px;		
+		background: url(../imgdenglu/221.png) ;
+	    
+		background-size:15px 15px ;
+	}
+	
+			
+/*-----三,扫码登录-------*/
+	.tou3{
+		background:white;
+	}
+	.tou3 ul li{
+		width: 300px;
+		display: inline-block;
+		text-align: center;
+	}
+	
+	.tou3 ul li:first-child{
+		margin:20px 0 20px 0 ;
+	}
+	.tou3 ul li:nth-child(2) input{
+		width: 110px;
+		height: 34px;
+		padding: 0;
+		/*position: absolute;*/
+		/*left: -12px;*/
+		background: crimson;
+		color: white;
+	}	
+	.tou3 ul li:nth-child(2) p{
+		margin-top: 27px;
+	    margin-bottom: 8px;
+	    text-align: center;
+		}
+		
+	.tou3 ul li:nth-child(2){
+	
+		height: 130px;
+		
+		/*background: #C0C0C0;*/
+		position: relative;
+		}
+	.tou3 ul li:nth-child(2) img{
+		padding: 0;
+		width: 130px;
+		height: 130px;
+		position: absolute;
+		left: 88px;
+		top: 10px;
+		}	
+	.tou3 .twowm{
+		width: 117px;
+	    height: 117px;
+	    position: absolute;
+	    left: 94px;
+	    top: 16px;
+	    float: initial;
+	    background: hsla(0,0%,100%,.75);
+	}	
+	.tou3 ul li:nth-child(3){
+		width: 180px;
+		margin: 10px 0 10px 58px ;
+		font-size: 12px;
+		
+		}
+	.tou3 ul li:nth-child(3) a{
+		color: red;
+		}
+		
+	.tou3 ul li:nth-child(3) img{
+		width: 32px;
+		height:32px;
+		}	
+	.tou3 ul li:nth-child(3) span{
+		display: block;
+		float: left;
+		}
+	.tou3 ul li:nth-child(3) span:last-child{
+		margin-left: 14px;
+	}
+.foot{
+	width: 100%;
+	height: 200px;
+	background: #f8f8f8;
+}
+
+.foott{
+	width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.foot1{
+	text-align: center;
+    color: #d9d9d9;
+    line-height: 42px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 15px;
+}
+
+.foot a{
+	text-align: center;
+    color: #d9d9d9;
+    line-height: 22px;
+	color: #666;
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+.foot2{
+	
+	 color: #666;
+    line-height: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.foot2{
+margin: 0 auto;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td,span,a{
+	margin:0;
+	padding:0;
+	text-decoration: none;
+	text-transform:none;
+}
+span{
+	text-decoration: none;
+}
+		#box{
+			width: 400px;
+			height: 500px;
+			margin: 0 auto;
+			background:gainsboro;
+			padding-left: 40px;
+			border: solid 4px slategrey;
+			/*margin-top: 40px;
+			margin-left: 20px;*/
+		}
+		.a2{
+			display: inline-block;
+			height: 30px;
+			width: 100px;
+			color: #555555;
+			background: white;
+			text-align:end;
+			margin: 10px;
+		}
+		span{
+			/*text-align: justify*/
+		}
+		input{
+			border-radius: 10px;
+			width:220px;
+			height: 30px;
+			background: aliceblue;
+			color: gray;
+			text-align: justify;
+			border: 0;
+			display:inline-block;
+			margin: 10px;
+			
+		}
+		h2{
+			margin: 20px;
+			color:slategrey;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<h2>简单的表单验证</h2>
+	
+	<span class="a2">用 户 名:</span><input type="text" id="nameID" value="***" />
+				<span id="name1"></span><br>
+	<span class="a2">密    码：</span><input type="text" id="passwID" value="***" />
+				<span id="name2"></span><br>
+	<span class="a2">电话号码：</span><input type="text" id="phponID" value="***" />
+				<span id="name3"></span><br>
+	<span class="a2">电子邮箱：</span><input type="text" id="emilID" value="***" />
+				<span id="name4"></span><br>
+	<span class="a2">QQ     号：</span><input type="text" id="qqID" value="***" />
+				<span id="name5"></span><br>
+	<span class="a2">身份证号码：</span><input type="text" id="zhenID" value="***" />
+				<span id="name6"></span><br>
+	<span class="a2">出生日期：</span><input type="text" id="barsedayID" value="***" />
+				<span id="name7"></span><br>
+	<span class="a2">IP 地 址：</span><input type="text" id="ipID" value="***" />
+				<span id="name8"></span><br>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	//用户名
+	 window.onload= function(){
+	    $('nameID').onblur = function(){
+			//；必须是中文，，先中文的十六进制的编码；因为js不识别中文；
+			var tex = /[\u4e00-\u9fa5]{2}/;
+			var arr = $('nameID').value;
+			if(tex.test(arr)){
+				$('name1').innerHTML = '√';
+			}else{
+				alert('输入有误');
+			}
+		}
+	//密码
+		$('passwID').onblur = function(){
+			//用正则写出密码的条件。必须是，字母&&数字&&符号；&&并且
+			var tex = /[a-zA-Z]/;
+			var tex1=/[0-9]/;
+			var tex2=/[#$%]/;
+			var arr = $('passwID').value;
+			if(arr.length>=6 && tex.test(arr)&& tex1.test(arr) && tex2.test(arr) ){
+				$('name2').innerHTML = '√';
+			}else{
+				$('name2').innerHTML = '×';
+			}
+		}
+	//电话号码
+		$('phponID').onblur = function(){
+			//用正则写出密码的条件。必须是，数字；
+			//第一位是1 ，第二位从3开始，后面的自由排列就好；\d的意思是数字字符
+			var tex =  /^1[3-9]\d{9}$/;
+			var arr = this.value;
+			if(tex.test(arr) ){
+				$('name3').innerHTML = '√';
+			}else{
+				$('name3').innerHTML ='有误';
+				
+			}
+		}
+		
+	
+	//电子邮箱;1299819187@qq.com
+		$('emilID').onblur = function(){
+			//用正则写邮箱的;1299819187@qq.com；xiao@361.net;ajnjnjn@mm.cn;
+			var tex = /^\w+@\w+.(com|cn|net)$/;
+			var arr = this.value;
+			if(tex.test(arr)){
+				$('name4').innerHTML = '√';
+			}else{
+				$('name4').innerHTML = '有误';
+				
+			}
+		}
+	//QQ号码
+		$('qqID').onblur = function(){
+			//设定数组的长度，{6.15}；
+			var tex = /[0-9]{6.15}/;
+			var arr = $('qqID').value;
+			if(tex.test(arr)){
+				$('name5').innerHTML = '√';
+			}else{
+				$('name5').innerHTML = '有误';
+				
+			}
+		}
+	//身份号码
+		$('zhenID').onblur = function(){
+			//用正则写出密码的条件。必须是，字母||数字||符号；
+			var tex = /^\d{6}(18|19|20)?\d{2}(0[1-9]|1[012])(0[1-9]|12]\d|3[01])\d{3}(\d|X)$/;
+			var arr = $('zhenID').value;
+			if(tex.test(arr)){
+				$('name6').innerHTML = '√';
+			}else{
+				$('name6').innerHTML = '有误';
+				
+			}
+		}
+	//出身日期
+		$('barsedayID').onblur = function(){
+			//用正则写出密码的条件。必须是，字母||数字||符号；
+			var tex = /^\d{4}(((\.\d{2}){2}|(\-\d{2}){2}|(\/\d{2}){2}))$/; 
+			var arr = $('barsedayID').value;
+			if(tex.test(arr) == true){
+				$('name2').innerHTML = '√';
+			}else{
+				$('name2').innerHTML ='有误';
+				
+			}
+		}
+//		 //id地址
+//		$('passwID').onblur = function(){
+//			//用正则写出密码的条件。必须是，字母||数字||符号；
+//			var tex = /[a-z0-9A-Z]{6-13}/;
+//			var arr = $('passwID');
+//			if(tex.test(arr) == true){
+//				$('name2').innerHTML = '√';
+//			}else{
+//				$('name2').innerHTML = '×';
+//				
+//			}
+//		}
+	}
+	function $(id){
+		return document.getElementById(id);
+	}
+</script>

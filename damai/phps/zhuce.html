@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册页面</title>
+    <style type="text/css">
+        #idSpan{
+            width: 200px;
+            height: 30px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    请输入会员名
+    <input type="text" id="vipid"><br><span id="idSpan"></span>
+    请输入姓名
+    <input type="text" id="vipname"><br/>
+    请输入密码
+    <input type="password" id="vippass"><br/>
+    请确认密码
+    <input type="password"><br/>
+    <input type="button" id="btn" value="注册">
+</body>
+</html>
+<script>
+function $(id){
+    return document.getElementById(id);
+}
+window.onload = function(){
+    //判断用户名是否已被注册
+   $("vipid").onblur = function(){
+    //创建对象
+    let xhr = new XMLHttpRequest();
+    //设置请求参数
+    xhr.open("get","zhucepan.php?vipid="+this.value,true);
+    //设置回调函数
+    xhr.onreadystatechange = function   (){
+        if(xhr.readyState==4 && xhr.status==200){
+            if(xhr.responseText=="0"){
+                $("idSpan").innerHTML = "恭喜您，该用户未被注册";
+                $("idSpan").style.color = "green";
+            }else{
+                $("idSpan").innerHTML = "对不起，该用户已被注册";
+                $("idSpan").style.color = "red";
+            }
+        }
+
+    }
+    xhr.send();
+    }
+    //注册
+    $("btn").onclick = function(){
+        //创建对象
+        let xhr = new XMLHttpRequest();
+        //设置请求参数
+        xhr.open("post","zhuceCheck.php",true);
+        //设置回调函数
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState==4 && xhr.status==200){
+                let str = xhr.responseText;
+                console.info(str);
+                if(str=="0"){
+                    alert("注册成功！");
+                    location.href="denglu.html";
+                }else{
+                    $("idSpan").innerHTML="注册失败，服务器出错！";
+                }
+            }
+        }
+        xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        let sendStr="vipid="+$("vipid").value+"&vipname="+$("vipname").value+"&vippass="+$("vippass").value;
+        xhr.send(sendStr);
+    }
+}
+
+</script>

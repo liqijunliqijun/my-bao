@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <style type="text/css">
+		div{
+			display:none;
+		}
+		</style>
+</head>
+<body style="height:1000px">
+	<div id="welcome">
+			欢迎您：<span id="idSpan"></span>
+			<input id="btn" type="button" value="注销" />
+	</div>
+	<div id="login">
+		<a href="denglu.html" >请登录</a>
+	</div>
+   <h1>欢迎您的光临！</h1>
+</body>
+</html>
+<script type="text/javascript" src="cookieTools.js"></script>
+<script type="text/javascript">
+    function $(id){
+    	return document.getElementById(id);
+    }
+
+    function chu(){
+		var vipid = getCookie("vipid");
+		if(vipid!=null){
+			$("idSpan").innerHTML = vipid;
+			$("welcome").style.display = "block";
+			$("login").style.display = "none";
+		}else{
+			$("welcome").style.display = "none";
+			$("login").style.display = "block";
+		}
+	}
+
+window.onload = function(){
+	//1、读取用户名
+	//2、初始化界面
+	chu();
+	
+	//3、注销
+	$("btn").onclick= function(){
+		removeCookie("vipname");
+		location.href="denglu.html";
+	}
+}
+</script>

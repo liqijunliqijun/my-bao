@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录页面</title>
+</head>
+<body>
+        请输入会员名
+        <input type="text" id="vipid"><br/>
+        请输入密码
+        <input type="password" id="vippass"><br/>
+        <span id="span1" style="color:red;display: none;">用户名或者密码不正确</span><br/>
+        <input id="btnLogin" type="button" value="登录" />
+</html>
+<script type="text/javascript" src="cookieTools.js" ></script>
+<script>
+    function $(id){
+        return document.getElementById(id);
+    }
+
+    window.onload = function(){
+        $("#btnLogin").onclick = function(){
+            let xhr = new XMLHttpRequest();
+            xhr.open("post","dengluCheck.php",true);
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState==4 && xhr.status==200){
+                    
+                    if(xhr.responseText=="0"){
+                        $("span1").style.display="block";
+                    }else{
+                        //此处的VIPID，是键名，可以说随意取值，但是后面的值不能随意，它代表的是id下面的内容；
+
+                       saveCookie("vipname",$("vipname").value,7);
+                        location.href = "index.html";
+                    }
+                }
+            }
+            xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            let sendStr="vipname="+$("vipname").value+"&vippass="+$("vippass").value;
+            xhr.send(sendStr);
+        }
+    }
+</script>

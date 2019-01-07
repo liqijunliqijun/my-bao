@@ -1,0 +1,401 @@
+ dt{
+	display: inline-block;
+	padding-top: 5px;
+	font-size: 14px;
+	float: left;
+}
+
+dd li {
+	float: left;
+	color: #333;
+	text-decoration: none;
+	outline: 0;
+	margin:  4px 10px 7px 0px;
+    margin-right: 12px;
+}
+ 
+ .search_city_line .clear li a {
+    padding: 4px 12px 4px 12px;
+	font-size: 14px;
+}
+
+.cont{
+	width: 100%;
+	background: white;
+	display:block;
+}
+
+.conto {
+	display:block;
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	background: white;
+}
+
+.tou{
+	display: block;
+	margin-bottom: 10px;
+	width: 1200px;
+	height: 40px;
+	border: 1px solid black;
+	background: white;
+}
+
+.contLeft {
+	display: block;
+	float: left;
+	margin-right: 18px;
+	/*border: 1px solid black;*/
+	background: white;
+		overflow: hidden;
+}
+
+.contRight {
+	display: block;
+	float: left;
+	border: 1px solid black;
+	width: 266px;
+	height: 500px;
+	background: white;
+	
+	/*background: #DCDCDC;*/
+}
+
+
+.search_city {
+	display: block;
+	width: 890px;
+	height: 602px;
+	/*border:1px solid #333333;*/
+	/*margin-bottom: 15px;*/
+	font-size: 14px;
+	position: relative;
+	z-index: 1;
+	background: white;
+}
+
+/*//更多/收起/全部*/
+	.cont1{
+		width: 910px;
+		display: inline-block;
+		position: relative;
+		background: white;
+		padding-top: 20px;
+		border: 1px solid #4A4A4A;
+	}
+	.heracity_more {
+		position: absolute;
+		left: 830px;
+	    top: 5px;
+		display: block;
+		width: 52px;
+		height: 20px;
+		background:white;
+	}
+	
+	.heracity_more img{
+		width: 15px;
+		height: 15px;
+	}
+	.search_city_up{
+		width: 52px;
+		height: 20px;
+		position: absolute;
+			color: black;
+		left: 10px;
+		top: 10px;
+		
+	
+	}
+	.search_city_off{
+	display: none;
+		position: absolute;
+		top: 10px;
+		left: 10px;	color: black;
+		width: 52px;
+		height: 20px;
+	}
+	
+	
+	
+	
+	
+	.search_city_line {
+		display: inline-block;
+		width: 840px;
+		float: left;
+		background: white;
+	    border-bottom: 3px dotted #dfdfdf;
+	    margin-bottom: 10px;
+		margin-left: 35px;
+		margin-right: 25px;
+		overflow: hidden;
+	}
+	.search_city_line .quanbu {
+		float: left;
+		margin-top: 4px;
+		display: block;
+		margin-left: 20px;
+		color: #333;
+		overflow: hidden;
+		
+	}
+	
+	.search_city_num {
+		width: 700px;
+		float: right;
+	
+	}
+	.dataTime {
+		padding:20px ;
+	}
+	.dataTime input{
+		width: 100px;
+		height: 40px;
+	}
+	
+	/*-------------第二da栏--------*/
+	.cont2 {
+		margin-top: 20px;
+		/*border: 1px solid #333333;
+		width: 910px;*/
+
+		position: relative;
+		background: white;
+	}
+	.cont2-1{
+		display: block;
+		width: 910px;
+		height: 38px;
+		background: white;
+	}
+	.contRigImg{
+		position: absolute;
+		right: 100px;
+		
+	}
+	.contRigImg img{
+		width: 37px;
+		height: 37px;
+	}
+	.cont2-1 .cont2left .contRigImg a{
+		display: block;
+		width: 38px;
+		height: 38px;
+		float: left;
+	}
+	.contRigA{
+		position: absolute;
+		right: 0px;
+		float: left;
+		background:white;
+	}
+	.contRigA a{
+		float: left;
+		background: white;
+	    text-align: center;
+		line-height: 38px;
+	}
+	
+	.contRigA p{
+		line-height: 38px;
+		padding: 0 10px;
+		float: left;
+		background:white;
+	}
+	
+	.conthear{
+		border:1px solid #666666;
+		border-bottom:0;
+		border-left:1px solid #666666;
+		}
+	
+	.conthear li{
+		float: left;
+	}
+	.conthear li a{
+		display: inline-block;
+	    height: 38px;
+	    line-height: 38px;
+	    padding: 0 24px;
+	    border-right: 1px solid #eaeaea;
+	    color: #666;
+	    text-align: center;
+	}
+	
+	
+	.cont2-3{
+		/*background: #FFE4E1;*/
+		display: inline-block;
+		width: 910px;
+		border:1px solid #333333 ;
+	}
+	.cont2tu{
+	padding: 25px 6px 20px 8px;
+		height: 404px;
+		/*background: #FFE4E1;*/
+	}
+/*-------图片样式--------*/
+	.tu{
+		border:1px solid #333333 ;
+	    width: 180px;
+	    height: 360px;
+	    float: left;
+	    margin: 0 20px;
+	    position: relative;
+	}
+	.cont2tu .tuu{
+		margin: 0 auto;
+		width: 160px;
+		height: 346px;
+		/*background: #BC8F8F;*/
+	}
+	.dou {
+		display: block;
+		width: 160px;
+		height: 261px;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	.dou img{
+		margin-top: 15px;
+		width: 160px;
+		height: 246px;
+	}
+	.dou span{
+		display: none;
+		position: absolute;
+		width: 160px;
+		height: 30px;
+		/*background: #CCCCCC;*/
+		line-height: 30px;
+		bottom: 20px;
+	}
+	
+	 .doutu{
+		display: block;
+		width: 160px;
+		height: 90px;
+		/*background: #F5F5DC;*/
+		font-size: 14px;
+	
+
+	}
+	.doutu span:nth-last-child{
+		width: 160px;
+		height: 30px;
+		font-size: 12px;
+		/*background: #707070;*/
+		color: azure;
+		
+		}
+	.doutu span:nth-child(2){
+		width: 160px;
+		height: 20px;
+		display: block;
+		font-size: 14px;
+		 color: #888888;
+		 margin-top: 5px;
+	
+	}
+	.doutu span:nth-child(3){
+		width: 160px;
+		display: block;
+		}
+	.doutu span:nth-child(3) span{
+		padding-left:30px ;
+	}
+/*------------------------*/
+.rightHear{
+	height: 37px;
+    line-height: 37px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #eaeaea;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    color: #000;
+    padding: 0 15px;
+}
+
+.conRRR{
+	display: block;
+    width: 123px;
+    padding-left: 10px;
+}
+.conRRR li{
+	margin-top: 20px;
+	width: 266px;
+    height: 132px;
+
+
+}
+.conRRR img{
+	display: block;
+	width: 98px;
+	height: 132px;
+}
+.conRRR a{
+	float: left;
+	width: 98px;
+	height: 132px;
+	
+}
+.conRRRtext{
+	display: inline-block;
+	/*background: #DCDCDC;*/
+    width: 133px;
+    padding-left: 10px;
+	float: left;
+}
+.conRRRtext div:nth-child(1){
+	height: 48px;
+    line-height: 16px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.conRRRtext div:nth-child(2){
+	    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+}
+.conRRRtext div:nth-child(3){
+	color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+}
+.conRRRtext div:nth-child(4){
+    color: #999;
+    padding-top: 14px;
+    font-size: 14px;
+}
+.conRRRtext div:nth-child(4) span{
+	color: red;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+
+
+
+
+/*.end{
+	top: 10px;
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	height: 100px;
+	background: silver;
+	text-align: center;
+	line-height: 22px;
+}*/

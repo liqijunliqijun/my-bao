@@ -1,0 +1,374 @@
+
+
+
+
+
+
+
+
+.city-header-wrap{
+		width: 610px;
+		z-index: 111;
+		position: absolute;
+		display: inline-block;
+		left: 35px;
+		top: 74;
+		/*margin-top: 60px;*/
+		background: #FFF;
+		border: 1px solid #F4F4F4;
+		box-shadow: 0 2px 8px 0 rgba(0,0,0,.05);
+		border-radius: 2px;
+		padding: 21px;
+		display:none ;
+		
+	}
+	.title-city{
+	    margin-right: 15px;
+	    /*vertical-align: top;*/
+	    font-size: 16px;
+	    color: #111;
+	    letter-spacing: .56px;
+	    float: left;
+	}
+	.hot-city{
+		line-height: 25px;
+		 margin-top: 40px;
+	}
+	.other-city{
+		line-height: 25px;
+	    padding-top: 15px;
+	    border-top: 1px solid #EEE;
+	    margin-top: 15px;
+	}
+	.other-city .list-other{
+		width: 525px;
+	    display: inline-block;
+	    line-height: 29px;
+	    margin-top: -24px;
+	    padding-left: 78px;
+	}
+	.list-other span{
+		display: inline-block;
+	    margin-right: 15px;
+	    font-size: 16px;
+	    color: #111;
+	    letter-spacing: .56px;
+	}
+	.other-city .list-other span{
+	    margin-right: 15px;
+	    /*vertical-align: top;*/
+	    font-size: 16px;
+	    color: #111;
+	    letter-spacing: .56px;
+	    float: left;
+		}
+		
+		span{
+			cursor: pointer;
+		}
+		.now-city .select-city{
+			color: red;
+		}
+		.name-city:hover{
+			color: red;
+		}
+		.list-other .name-city:hover{
+			color: red;
+		}
+				
+		/*.heard .heardOne-1:hover .city-header-wrap{
+			display: block;
+			z-index:999;
+			color: royalblue;
+			background: darkolivegreen;
+		}*/
+
+/*<!--轮播图-->*/
+	.lun{
+	    position: relative;
+		margin: 0 auto;
+		overflow: hidden;
+		background: #708090;
+		width: 1200px;
+		}	
+			
+		#box {
+		    height: 320px;
+		}
+		#box img{
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 1200px;
+			height: 400px;
+			opacity: 0;
+		}
+		#box img:nth-child(1) {
+			opacity: 1;
+		}
+		#box ul {
+			list-style: none;
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+			z-index: 2;
+		}
+		#box ul li {
+			float: left;
+			margin-left: 20px;
+			width: 20px;
+			height: 20px;
+			background-color: gray;
+			border-radius: 50%;
+		}
+		#box ul li:nth-child(1) {
+			background-color: red;
+		}
+		.p-right{
+		    position: absolute;
+		    top: 50%;
+		    margin-top: -32px;
+		    width: 56px;
+		    height: 64px;
+		    display: block;
+		    z-index: 101;
+		    background: rgba(0,0,0,1);
+		    cursor: pointer;
+		    right: 0;
+			}
+		.p-right p{
+			position: absolute;
+		    right: 23px;
+    		top: 48%;
+		    display: block;
+		    content: "";
+		    width: 18px;
+		    height: 18px;
+		    border: solid #fff;
+		    border-width: 2px 2px 0 0;
+		    -webkit-transform: translate(0,-50%) rotate(45deg);
+		    transform: translate(0,-50%) rotate(45deg)
+		}
+		.p-left {
+		    position: absolute;
+		    top: 50%;
+		    margin-top: -32px;
+		    width: 56px;
+		    height: 64px;
+		    display: block;
+		    z-index: 101;
+		    background: rgba(0,0,0,1);
+		    cursor: pointer;
+		    left: 0;
+		}
+		.p-left p{
+		    position: absolute;
+		    right: 15px;
+		 	top: 15%;
+		    display: block;
+		    width: 18px;
+		    height: 18px;
+		    border: solid #fff;
+		    border-width: 2px 2px 0 0;
+		    -webkit-transform: translate(0,50%) rotate(-135deg);
+		    transform: translate(0,50%) rotate(-135deg);
+		}
+
+/*<!--分类-->*/
+.classtopic{
+	height: 80px;
+	display: inblock;
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 15px;
+    padding: 22px 0 25px;
+    border: 1px solid #EBEBEB;
+}
+.classtopic a{
+	width: 120px;
+	float: left;
+	color: #111;
+	font-size: 16px;
+	text-align: center;
+}
+a:hover p{
+	color: red;
+}
+
+
+
+
+/*<!--正文-->*/
+.textt{
+	width:100%;
+	margin: 0 auto;
+}
+
+/*演唱会*/
+.tex{
+	height: 100%;
+	width: 1160px;
+	margin: 0 auto;
+	padding: 20px;
+	margin-top: 15px;
+	display: block;
+    border: 1px solid #EBEBEB;
+    overflow: auto;
+}
+
+.her{
+	font-size: 24px;
+    display: inline-block;
+    margin-left: 5px;
+    color: #111;
+    width: 1150px;
+    height: 60px;
+}
+.com{
+	display: block;
+	height: 366px;
+	overflow: hidden;
+}
+.comH{
+	display: inline-block;
+	width: 272px;
+	height: 366px;
+	position: relative;	
+}
+.comH ul:hover{
+	background-color: rgb(0,0,0,0.9);
+	transform: all 1s;
+
+}
+.comText a {
+	position: relative;
+}
+
+.comText a .shadow img:hover{
+	box-shadow:0  4px 4px  gray;
+	transform: all 1s;
+	width: 140px;
+	height: 190px;
+	position: absolute;
+	left: -15px;
+	top: -10px;
+	z-index: 1;
+	border-radius: 8px ;
+}
+
+
+
+
+.comImg{
+	display: block;
+	width: 272px;
+	height: 366px;
+	float: left;
+	}
+.comH ul{
+	width: 272px;
+	height: 99px;
+	display: inline-block;
+	position: relative;	
+	top: -99px;
+	background-color: rgba(0,0,0,.5);
+    color: white;
+   	padding:0 10px ;
+	}
+.comH ul li:last-child{
+	margin-top: 22px;
+	font-size: 20px;
+}
+.comText img{
+	width: 118px;
+	height: 163px;
+	float: left;
+}
+.comText{
+	width: 870px;
+	display: block;
+	/*background: darkgray;*/
+	float: right;
+}
+.comText a{
+	float: left;
+	/*background: snow;*/
+	width: 273px;
+    height: 163px;
+    margin-right: 16px;
+    color: #000;
+}
+.comText a:nth-child(1){
+	margin-bottom: 40px;	
+}
+.comText a:nth-child(2){
+	margin-bottom: 40px;
+}
+.comText a:nth-child(3){
+	margin-bottom: 40px;
+}
+.comText ul{
+	line-height: 20px;
+    font-size: 12px;
+    color: #4A4A4A;
+    overflow: hidden;
+	width: 145px;
+    height: 163px;
+	float: left;
+	margin-left: 10px;
+	position: absolute;
+	/*background: salmon;*/
+}
+.comText ul li:nth-child(1){
+	line-height: 20px;
+    font-size: 14px;
+}
+.comText ul li:nth-child(2){
+	font-size: 12px;
+    color: #9B9B9B;
+	margin: 10px 0;
+}
+.comText ul li:nth-child(3){
+	margin-bottom: 24px;
+	 color: #9B9B9B;
+}
+.comText ul li:last-child{
+    font-size: 16px;
+    color: #FF1268;
+}
+.theHeR{
+	float: right;
+	font-size:16px ;
+	color: #111;
+}
+/*鼠标滑过事件*/
+.theHeR a:hover{
+	color: red;
+}
+.comH ul li:hover{
+	color: #FF1268;
+} 
+
+
+.comText a ul{
+	display: inline-block;
+}
+
+.shadow{
+	width: 118px;
+	height: 163px;
+	display: inline-block;
+}
+.comText a ul li:hover{
+	color: red;
+}
+
+
+
+.end{
+	width: 100%;
+	height: 100px;
+	background: silver;
+	text-align: center;
+	line-height: 22px;
+}
